@@ -6,12 +6,12 @@ package main
 //	Articles []Article // 用户拥有的文章列表
 //}
 
-//type Article struct {
-//	ID     uint   `gorm:"size:4"`
-//	Title  string `gorm:"size:16"`
-//	UserID uint   `gorm:"size:4"` // 属于   这里的类型要和引用的外键类型一致，包括大小
-//	User   User   // 属于
-//}
+type Article struct {
+	ID     uint   `gorm:"size:4"`
+	Title  string `gorm:"size:16"`
+	UserID uint   `gorm:"size:4"` // 属于   这里的类型要和引用的外键类型一致，包括大小
+	User   User   // 属于
+}
 
 func main() {
 	//var user User

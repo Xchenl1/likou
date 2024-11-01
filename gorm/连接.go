@@ -16,6 +16,7 @@ type Student struct {
 }
 
 var mysqlLogger logger.Interface
+
 var DB *gorm.DB
 
 func init() {
